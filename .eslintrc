@@ -1,0 +1,54 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "ecmaFeatures": {
+      "experimentalDecorators": true
+    },
+    "sourceType": "module"
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react-hooks"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "max-len": [
+      "error",
+      {
+        "code": 95,
+        "tabWidth": 2,
+        "ignoreUrls": true
+      }
+    ],
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "function-paren-newline": ["error", "consistent"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "standard/no-callback-literal": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "space-before-function-paren": [
+      "error",
+      { "anonymous": "ignore", "named": "never", "asyncArrow": "always" }
+    ],
+    "prettier/prettier": [
+      "off",
+      {
+        "semi": false,
+        "trailingComma": "all",
+        "singleQuote": true,
+        "printWidth": 95,
+        "tabWidth": 2,
+        "arrowParens": "avoid",
+        "jsxBracketSameLine": false
+      }
+    ]
+  }
+}

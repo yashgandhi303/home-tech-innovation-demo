@@ -1,0 +1,12 @@
+# folders
+/build
+/node_modules
+translation
+/.next
+/.linaria-cache
+# files
+registerServiceWorker.js
+package.json
+tsconfig.json
+paths.json
+postcss.config.js
